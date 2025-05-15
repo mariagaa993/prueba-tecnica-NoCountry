@@ -35,12 +35,12 @@ const AllInsights = ({ title, insights }: Props) => {
     return (
         <div className="border-t border-gray-300 pt-4 mt-4">
             <h3 className="text-md font-semibold mb-4">{title}</h3>
-            <div className="flex flex-wrap justify-center md:justify-between gap-5">
+            <div className="flex flex-wrap md:justify-between gap-7">
                 {
                     insights.map((insight) => (
                         <div 
                             key={insight.key} 
-                            className="flex flex-col items-center">
+                            className="flex flex-col md:items-center">
                             <span>{getIcon(insight.key)}</span>
                             <p className="text-md font-bold mt-1">{insight.value}</p>
                             <p className="text-sm text-center text-gray-600">{insight.label}</p>
