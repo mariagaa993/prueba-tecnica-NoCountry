@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Prueba Técnica Frontend - Panel de Seguimiento de Equipos (Vista Empresa)
 
-## Getting Started
+## 📝 Descripción  
+Proyecto para que una empresa visualice sus equipos en un panel dinámico e intuitivo, alineado al branding de No Country. Se están utilizando datos simulados.
 
-First, run the development server:
+---
+
+## 🛠️ Tecnologías usadas
+
+- ⚛️ **Next.js**   
+- 📜 **TypeScript**   
+- 🎨 **Tailwind CSS** 
+
+---
+
+## ⚙️ Características principales
+
+- **Tabs horizontales** para navegar entre equipos.  
+- **Visualización de miembros del equipo** con foto, nombre, rol, ubicación.  
+- **Insights clave** con título, icono, valor.  
+- **Botón “Ver Insights”** que abre un modal con:  
+  - Selección de hasta 5 equipos.
+  - Ver más insights a medida que se seleccione los equipos. 
+  - Precio total según selección.  
+  - Botón para Comprar (sin funcionalidad).
+
+---
+
+## 📂 Estructura del proyecto
+
+- `components/` - Componentes reutilizables (Header, Tabs, Dropdown, Insight, Modal, etc.)  
+- `utils/mock.ts` - Datos simulados
+- `utils/tab.ts` - Para mostrar los tabs 
+- `styles/` - Estilos globales (Tailwind)
+
+---
+
+## 📂 Decisiones técnicas
+
+- Para la parte de insight se decidió mostrar un carrousel solo para la versión mobile. No encontré
+necesario mostrar el carrousel en tablet y desktop por la cantidad de insights (3). En caso de mostrar
+más de 4 el cambio sería mínimo porque es el mismo componente, solo sería habilitar los estilos para
+tablet y desktop.
+- Dentro del modal se muestra información de más insights que son relevantes para una empresa según
+la selección. Se decidió mostrar a medida de la selección para evitar que la persona tenga que salir,
+ir al equipo correspondiente y ver los insights de dicho equipo. Es mucho más sencillo para el usuario,
+que al hacer la selección tenga información importante a la mano sin tener que rebuscarla facilitando
+así, la hora de comprar. 
+
+---
+
+## 🚀 Cómo ejecutar el proyecto
+
+Primero, ejecuta el servidor de desarrollo:
 
 ```bash
 npm run dev
-# or
+# o
 yarn dev
-# or
+# o
 pnpm dev
-# or
+# o
 bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Abrir [http://localhost:3000](http://localhost:3000) para ver la UI.
