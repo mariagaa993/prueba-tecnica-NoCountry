@@ -32,7 +32,7 @@ const Insight = ({ insights } : InsightProps) => {
     return (
         <Carousel> 
             {
-                insights.map(item => (
+                insights.slice(0, 3).map(item => (
                     <div
                         key={item.key}
                         className="min-w-[230px] snap-start bg-white p-5 border border-gray-200 

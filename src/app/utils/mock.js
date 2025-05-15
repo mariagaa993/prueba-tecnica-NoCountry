@@ -1,7 +1,8 @@
 export const mock = {
     teams: [
         {
-            name: "Equipo Alfa",
+            name: "Alfa",
+            price: 300,
             members: [
                 { name: "Carlos Méndez", role: "Ingeniero de Software", location: "Lima, Perú", imageUrl: "https://randomuser.me/api/portraits/men/65.jpg" },
                 { name: "Sofía Ruiz", role: "Diseñadora UX/UI", location: "Buenos Aires, Argentina", imageUrl: "https://randomuser.me/api/portraits/women/68.jpg" },
@@ -15,11 +16,13 @@ export const mock = {
             insights: [
                 { key: "messages", value: "510", label: "Mensajes enviados" },
                 { key: "participation", value: "88%", label: "Participación" },
-                { key: "attendance", value: "95%", label: "Asistencia" }
+                { key: "attendance", value: "95%", label: "Asistencia" },
+                { key: "compromiso", value: "100%", label: "Compromiso" }
             ]
         },
         {
-            name: "Equipo Beta",
+            name: "Beta",
+            price: 210,
             members: [
                 { name: "Ana Pérez", role: "Data Scientist", location: "Quito, Ecuador", imageUrl: "https://randomuser.me/api/portraits/women/12.jpg" },
                 { name: "Javier Ramírez", role: "Mobile Developer", location: "Guadalajara, México", imageUrl: "https://randomuser.me/api/portraits/men/44.jpg" },
@@ -30,11 +33,13 @@ export const mock = {
             insights: [
                 { key: "messages", value: "305", label: "Mensajes enviados" },
                 { key: "participation", value: "92%", label: "Participación" },
-                { key: "attendance", value: "97%", label: "Asistencia" }
+                { key: "attendance", value: "97%", label: "Asistencia" },
+                { key: "compromiso", value: "100%", label: "Compromiso" }
             ]
         },
         {
-            name: "Equipo Gamma",
+            name: "Gamma",
+            price: 450,
             members: [
                 { name: "Ricardo Mendoza", role: "QA Engineer", location: "Ciudad de México, México", imageUrl: "https://randomuser.me/api/portraits/men/52.jpg" },
                 { name: "Elena Vargas", role: "Marketing Manager", location: "Santiago, Chile", imageUrl: "https://randomuser.me/api/portraits/women/34.jpg" },
@@ -49,11 +54,13 @@ export const mock = {
             insights: [
                 { key: "messages", value: "420", label: "Mensajes enviados" },
                 { key: "participation", value: "80%", label: "Participación" },
-                { key: "attendance", value: "89%", label: "Asistencia" }
+                { key: "attendance", value: "89%", label: "Asistencia" },
+                { key: "compromiso", value: "100%", label: "Compromiso" }
             ]
         },
         {
-            name: "Equipo Delta",
+            name: "Delta",
+            price: 280,
             members: [
                 { name: "Pablo Silva", role: "Frontend Developer", location: "Ciudad de México, México", imageUrl: "https://randomuser.me/api/portraits/men/36.jpg" },
                 { name: "Gabriela Cruz", role: "Product Owner", location: "Santiago, Chile", imageUrl: "https://randomuser.me/api/portraits/women/50.jpg" },
@@ -66,11 +73,13 @@ export const mock = {
             insights: [
                 { key: "messages", value: "275", label: "Mensajes enviados" },
                 { key: "participation", value: "93%", label: "Participación" },
-                { key: "attendance", value: "90%", label: "Asistencia" }
+                { key: "attendance", value: "90%", label: "Asistencia" },
+                { key: "compromiso", value: "100%", label: "Compromiso" }
             ]
         },
         {
-            name: "Equipo Épsilon",
+            name: "Épsilon",
+            price: 410,
             members: [
                 { name: "Carolina Ruiz", role: "Data Analyst", location: "Buenos Aires, Argentina", imageUrl: "https://randomuser.me/api/portraits/women/77.jpg" },
                 { name: "Alejandro Fernández", role: "Backend Developer", location: "Monterrey, México", imageUrl: "https://randomuser.me/api/portraits/men/88.jpg" },
@@ -82,7 +91,8 @@ export const mock = {
             insights: [
                 { key: "messages", value: "190", label: "Mensajes enviados" },
                 { key: "participation", value: "85%", label: "Participación" },
-                { key: "attendance", value: "87%", label: "Asistencia" }
+                { key: "attendance", value: "87%", label: "Asistencia" },
+                { key: "compromiso", value: "100%", label: "Compromiso" }
             ]
         }
     ]

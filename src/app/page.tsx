@@ -5,12 +5,15 @@ import SubHeader from "./components/SubHeader";
 import Team from "./components/Members";
 import Insight from "./components/Insight";
 import Modal from "./components/Modal";
+import TeamToggleList from "./components/TeamToggleList";
+import AllInsights from "./components/AllInsights";
 import { mock } from "./utils/mock";
 
 const Home = () => {
     const [activeTab, setActiveTab] = useState(0);
     const activeTeam = mock.teams[activeTab];
     const [modalOpen, setModalOpen] = useState(false);
+    const [selectedTeams, setSelectedTeams] = useState<number[]>([]);
 
     return (
         <div className="bg-white md:bg-gray-100">
@@ -23,7 +26,7 @@ const Home = () => {
                         title={"Panel de Seguimiento de Equipos"} 
                         activeTab={activeTab} 
                         setActiveTab={setActiveTab}
-                        teamName={activeTeam.name}
+                        teamName={`Equipo ${activeTeam.name}`}
                     />
                     <Team members={activeTeam.members} />
                     <Insight insights={activeTeam.insights} />
@@ -38,7 +41,20 @@ const Home = () => {
                 </div>
             </div>
             <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)} title="Talento">
-                holaaaa
+               <TeamToggleList
+                    teams={mock.teams}
+                    selected={selectedTeams}         
+                    setSelected={setSelectedTeams}  
+                />
+                {
+                    selectedTeams.map((teamIndex, idx) => (
+                        <AllInsights
+                            key={teamIndex}
+                            title={`Equipo ${idx + 1}`}
+                            insights={mock.teams[teamIndex]?.insights || []}
+                        />
+                    ))
+                }
             </Modal>
         </div>
     );
