@@ -61,5 +61,5 @@ yarn dev
 pnpm dev
 # o
 bun dev
-
+```
 Abrir [http://localhost:3000](http://localhost:3000) para ver la UI.
