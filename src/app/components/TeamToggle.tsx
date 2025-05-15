@@ -15,7 +15,7 @@ const TeamToggle = ({ team, nameTeam, price, selected, onToggle }: TeamTogglePro
                 <p className="text-sm">{team}</p>
                 <p className="text-md font-bold">{nameTeam}</p>
             </div>
-            <p className="font-bold text-indigo-700">${price.toFixed(2)}</p>
+            <p className="font-bold text-indigo-600">${price.toFixed(2)}</p>
         </div>
     );
 };

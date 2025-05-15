@@ -18,11 +18,11 @@ type InsightProps = {
 const getIcon = (key: string) => {
     switch (key) {
         case "messages":
-            return <ChatBubbleLeftIcon className="w-10 h-10 text-indigo-600" />;
+            return <ChatBubbleLeftIcon className="w-10 h-10 text-indigo-500" />;
         case "participation":
-            return <HandRaisedIcon className="w-10 h-10 text-green-600" />;
+            return <HandRaisedIcon className="w-10 h-10 text-green-500" />;
         case "attendance":
-            return <CheckCircleIcon className="w-10 h-10 text-blue-600" />;
+            return <CheckCircleIcon className="w-10 h-10 text-blue-500" />;
         default:
             return null;
     }

@@ -19,13 +19,13 @@ type Props = {
 const getIcon = (key: string) => {
     switch (key) {
         case "messages":
-            return <ChatBubbleLeftIcon className="w-5 h-5 text-indigo-600" />;
+            return <ChatBubbleLeftIcon className="w-5 h-5 text-indigo-500" />;
         case "participation":
-            return <HandRaisedIcon className="w-5 h-5 text-green-600" />;
+            return <HandRaisedIcon className="w-5 h-5 text-green-500" />;
         case "attendance":
-            return <CheckCircleIcon className="w-5 h-5 text-blue-600" />;
+            return <CheckCircleIcon className="w-5 h-5 text-blue-500" />;
         case "compromiso":
-            return <HeartIcon className="w-5 h-5 text-red-600" />;
+            return <HeartIcon className="w-5 h-5 text-red-500" />;
         default:
             return null;
     }

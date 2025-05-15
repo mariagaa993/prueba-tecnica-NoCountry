@@ -4,11 +4,11 @@ const Header = () => {
     return (
         <nav className="container mx-auto px-4 py-6">
             <Image 
-                src="/next.svg"
+                src="/light-no-country-logo.png"
                 alt="Logo" 
-                width={120} 
+                width={100} 
                 height={40} 
-                className="w-32 md:w-40 lg:w-48" 
+                className="w-32" 
             />
         </nav>
     );

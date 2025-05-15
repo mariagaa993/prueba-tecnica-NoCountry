@@ -13,7 +13,7 @@ type SubHeaderProps = {
 const SubHeader = ({ title, activeTab, setActiveTab, teamName } : SubHeaderProps) => {
     return (
         <div className="pb-6 md:pb-10">
-            <h1 className="font-semibold text-2xl pb-6">{title}</h1>  
+            <h1 className="font-semibold text-2xl pb-6 text-[#000115]">{title}</h1>  
             <div className="hidden md:block">
                 <Tabs
                     tabs={tab.team}
@@ -22,7 +22,7 @@ const SubHeader = ({ title, activeTab, setActiveTab, teamName } : SubHeaderProps
                 />
                 <div className="flex items-center gap-2 pt-8 md:pt-10">
                     <StarIcon className="w-6 h-6 text-yellow-300" />
-                    <h2 className="font-semibold text-xl">{teamName}</h2> 
+                    <h2 className="font-semibold text-xl text-[#000115]">{teamName}</h2> 
                 </div> 
             </div>
             <div className="md:hidden">

@@ -28,7 +28,7 @@ const MemberCard = ({ member }: MemberCardProps) => {
                     />
                 </div>
             </div>
-            <h3 className="text-sm font-semibold">{member.name}</h3>
+            <h3 className="text-sm font-semibold text-[#000115]">{member.name}</h3>
             <p className="text-sm text-indigo-600">{member.role}</p>
             <p className="text-gray-600 text-sm">{member.location}</p>
         </div>

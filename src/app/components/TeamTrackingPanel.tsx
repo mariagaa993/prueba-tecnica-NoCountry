@@ -17,12 +17,13 @@ const TeamTrackingPanel = () => {
     const [selectedTeams, setSelectedTeams] = useState<number[]>([]);
 
     return (
-        <div className="bg-white md:bg-gray-100">
-            <div className="bg-gray-200">
+        <div className="bg-[#000115]">
+            <div className="bg-[#000115] border-b border-gray-800">
                 <Header />
             </div>
-            <div className="container mx-auto px-4 pb-20 pt-12 md:py-6 lg:px-20">
-                <div className="bg-white md:shadow-md md:rounded-md md:px-3 md:pt-8 md:pb-12 lg:px-8">
+            <div className="container mx-auto md:pb-20 md:pt-8 md:px-4 lg:px-20">
+                <div className="bg-white md:rounded-3xl px-4 pt-12 pb-20 md:px-3 
+                    md:pt-6 md:pb-12 lg:px-8 lg:pt-8">
                     <SubHeader 
                         title={"Panel de Seguimiento de Equipos"} 
                         activeTab={activeTab} 
@@ -34,7 +35,7 @@ const TeamTrackingPanel = () => {
                     <div className="flex justify-center md:pt-4">
                         <button 
                             type="button" 
-                            className="w-full md:w-auto bg-black text-white px-20 py-2 cursor-pointer 
+                            className="w-full md:w-auto bg-indigo-600 text-white px-20 py-2 cursor-pointer 
                             rounded text-sm font-bold" 
                             onClick={() => setModalOpen(true)}>Ver insights
                         </button>
