@@ -45,7 +45,13 @@ tablet y desktop.
 la selección. Se decidió mostrar a medida de la selección para evitar que la persona tenga que salir,
 ir al equipo correspondiente y ver los insights de dicho equipo. Es mucho más sencillo para el usuario,
 que al hacer la selección tenga información importante a la mano sin tener que rebuscarla facilitando
-así, la hora de comprar. 
+así, la hora de comprar.
+- La idea del diseño del contenedor general se tomó de una vista que está en la página de [NoCountry](https://www.nocountry.tech/).
+- La parte donde se muestran los miembros del equipo es totalmente flexible. Funciona para equipos de un miembro
+en adelante, sin límite máximo. Sin importar la cantidad siempre se mostrará de manera amigable con efecto ola y
+esto es porque se realizó un calculo para que todas aquellas tarjetas que sean impares siempre tenga un margen top
+adicional.
+- El botón de comprar solo se muestra cuando el usuario selecciona al menos un equipo, con el fin de mejorar la experiencia al simplificar la interfaz, evitar clics innecesarios y guiar claramente al usuario en el flujo de acción.
 
 ---
 
