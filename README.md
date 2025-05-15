@@ -35,7 +35,7 @@ Proyecto para que una empresa visualice sus equipos en un panel dinámico e intu
 
 ---
 
-## 📂 Decisiones técnicas
+## 💡 Decisiones técnicas
 
 - Para la parte de insight se decidió mostrar un carrousel solo para la versión mobile. No encontré
 necesario mostrar el carrousel en tablet y desktop por la cantidad de insights (3). En caso de mostrar
